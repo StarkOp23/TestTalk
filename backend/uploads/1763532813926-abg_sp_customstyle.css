@@ -1,0 +1,1582 @@
+#oda-chat-share-button {
+    justify-content: left;
+    margin-left: 0px;
+    padding-left: 0px;
+    background: red;
+    min-width: 10px
+}
+
+
+.Ava_row {
+    padding-bottom: 52px !important;
+    margin-top: 1px !important;
+}
+
+.oda-chat-message-content a {
+    color: blue !important
+}
+
+/* customized confirm box */
+
+#chat-bot-prompt {
+    border-radius: 10px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 25%;
+    right: 5%;
+    left: 5%;
+    font-size: 18px;
+    background: white;
+    /* border: 1px solid; */
+    padding: 10px;
+    box-shadow: 0px 1px 20px 0px #888888;
+    font-family: "Oracle Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif !important;
+    text-align: -webkit-center;
+}
+
+.chat-bot-confirmbutton {
+    font-size: 15px;
+    font-family: "Oracle Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif !important;
+    text-decoration: none;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 3px 3px;
+    cursor: pointer !important;
+    color: black;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    float: left;
+}
+
+#chat-bot-Ybut {
+    background-color: black !important;
+    color: white;
+    width: 200px;
+    text-decoration: none;
+}
+
+#chat-bot-Nbut {
+    background-color: black !important;
+    color: white;
+    width: 200px;
+    text-decoration: none;
+}
+
+
+
+
+/*  Custom design of button ########################################################################################## */
+
+.oda-chat-message-actions .oda-chat-action-postback.oda-chat-disabled {
+    display: inline-block !important;
+}
+
+.oda-chat-message-actions .oda-chat-action-postback {
+    width: -webkit-fill-available !important;
+    color: #007f9e !important;
+    background-color: #ffffff !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    font-size: 13.00px !important;
+    margin: 3px !important;
+    padding: 5px 5px !important;
+    text-decoration: none !important;
+}
+
+.oda-chat-action-postback {
+    background-color: #ffffff !important;
+}
+
+.oda-chat-message-actions .oda-chat-action-postback:hover {
+    background-color: #C64304 !important;
+    color: white !important;
+    border: none !important;
+}
+
+
+.oda-chat-message-actions {
+    display: inline !important;
+    /* flex-direction: column; */
+}
+
+
+
+.oda-chat-button-icon {
+    display: none !important;
+    /* background-color: #ffffff !important; */
+    margin: 0px !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+
+.oda-chat-header {
+    display: none  !important;
+    background: linear-gradient(90deg, rgba(166, 15, 20, 1) 33%, rgb(241 103 39) 100%) !important;
+    /* background: url(https://pbs.twimg.com/ext_tw_video_thumb/1231279148154466304/pu/img/N6ToQMr0rLWAtzDC.jpg:large); */
+    background-position: bottom;
+    background-size: cover !important;
+}
+
+
+.oda-chat-header-button-icon {
+    display: none;
+    display: flex !important;
+    max-height: 50% !important;
+    pointer-events: none;
+}
+
+.oda-chat-title {
+    margin: 41px !important;
+}
+
+
+#oda-chat-title {
+    margin: 13px !important;
+    margin-left: -90px !important;
+    text-align: left !important;
+}
+
+.oda-chat-logo {
+    flex: 0 0 auto;
+    max-height: 100px !important;
+    max-width: 100px !important;
+    padding: 0px;
+    display: none !important;
+    height: 45px !important;
+    padding: 0px !important;
+    width: 90px !important;
+}
+
+.oda-chat-header-actions {
+    display: none !important;
+    cursor: pointer !important;
+}
+
+.oda-chat-conversation-pane {
+    display: flex !important;
+    flex: 1 1 auto !important;
+    flex-direction: column !important;
+    /*  background-color: white !important; */
+}
+
+.oda-chat-footer {
+    background-color: #ffffff !important;
+    height: 67px !important;
+}
+
+.oda-chat-footer-button {
+    background-color: #ffffff !important;
+    min-width: 10px;
+}
+
+.oda-chat-footer-button-icon {
+    display: flex !important;
+    max-height: 50% !important;
+}
+
+.oda-chat-wrapper .oda-chat-footer-button:not(:disabled):hover svg>path,
+.oda-chat-wrapper .oda-chat-footer-button:not(:disabled):focus svg>path {
+    fill: #C64304 !important;
+}
+
+.oda-chat-left .oda-chat-message-bubble,
+[dir=rtl] .oda-chat-right .oda-chat-message-bubble {
+    /* border-radius: 24px 24px 24px 0; */
+    margin-left: 0px !important;
+    margin-right: 20px;
+}
+
+.oda-chat-message-bubble {
+    /* background-color: #f6cece !important; */
+    background-color: #ffede5 !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important;
+    margin: 0 auto;
+    border-radius: 0px 20px 20px 20px !important;
+    font-size: 14px !important;
+    color: #333333;
+    max-width: 350px;
+    padding: 14px !important;
+    position: relative;
+    margin-top: 4% !important;
+    margin-bottom: 5% !important;
+    box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.15),
+        0px 2px 15px rgba(0, 0, 0, 0.1),
+        8px 0px 8px rgba(0, 0, 0, 0.05) !important;
+
+}
+
+
+.oda-chat-footer-mode-keyboard {
+    align-items: center;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    /* max-height: 78px; */
+    max-width: 100%;
+    padding: 8px 2px 6px 4px;
+}
+
+.oda-chat-footer-button-svg-icon {
+    /* display: none !important; */
+    fill: black !important;
+    height: 24px;
+    width: 24px;
+}
+
+.oda-chat-button-send {
+    background-color: transparent !important;
+    /* display: none !important; */
+}
+
+
+
+
+.oda-chat-button-switch-voice {
+    background-color: transparent !important;
+    color: black !important;
+    /* display: none !important; */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .oda-chat-button {
+        width: max-content;
+        background-color: transparent !important;
+        height: 100px !important;
+    }
+}
+
+
+/* change card title color */
+
+.oda-chat-card-title {
+    font-weight: bold;
+    margin: 4px !important;
+    max-width: 100%;
+    text-align: left !important;
+    color: #161513 !important;
+}
+
+.oda-chat-subtitle {
+    color: #fff;
+    font-size: 14px;
+    padding: 0px !important;
+    margin-inline-start: 13px !important;
+    margin-bottom: 13px !important;
+}
+
+.oda-chat-title,
+.oda-chat-subtitle,
+.oda-chat-connection-status {
+    justify-content: center;
+    max-width: 100%;
+    margin-top: -9px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+
+#chat-bot-Ybut {
+    background-color: #080808;
+    color: rgb(255, 246, 246);
+    width: 200px;
+    text-decoration: none;
+}
+
+.chat-bot-confirmbutton {
+    font-size: 15px;
+    font-family: "Oracle Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif !important;
+    text-decoration: none;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+    background-color: #4CAF50;
+    border: none;
+    color: white !important;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 3px 3px;
+    cursor: pointer !important;
+    color: black;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    float: left;
+}
+
+#chat-bot-Ybut:hover {
+    background-color: #d71d24 !important;
+}
+
+#chat-bot-Ybut:active {
+    background-color: #d71d24;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px)
+}
+
+#chat-bot-Nbut {
+    background-color: #080808;
+    color: rgb(255, 246, 246);
+    width: 200px;
+    text-decoration: none;
+}
+
+#chat-bot-Nbut:hover {
+    background-color: #d71d24 !important;
+}
+
+#chat-bot-Nbut:active {
+    background-color: #d71d24;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px)
+}
+
+.oda-chat-footer-button-svg-icon {
+    /* fill: #d71d24; */
+    height: 24px;
+    width: 24px;
+}
+
+.oda-chat-card {
+    color: Black;
+    /* margin: 4px !important; */
+    border-radius: 24px !important;
+    background-color: #f6cece !important;
+    justify-content: center !important;
+    margin: 0;
+    border-radius: 0px 20px 20px 20px !important;
+    font-size: 14px !important;
+    /* max-width: 270px !important; */
+    /* max-width: 105% !important; */
+    padding: 14px !important;
+    position: relative;
+    margin-top: 4% !important;
+    margin-bottom: 5% !important;
+    /* border: 2px solid darkred !important; */
+
+
+}
+
+/* Header icon hover */
+.oda-chat-wrapper .oda-chat-header-button:not(:disabled):hover,
+.oda-chat-wrapper .oda-chat-header-button:not(:disabled):focus {
+    background-color: transparent !important;
+}
+
+.oda-chat-user-input {
+    min-height: 53px !important;
+    padding: 8px !important;
+}
+
+
+.oda-chat-card::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 0px !important;
+    left: -10px !important;
+    width: 0 !important;
+    height: 0 !important;
+    border-style: solid !important;
+    border-width: 10px 10px 10px 0 !important;
+    border-color: transparent #f6cece transparent transparent !important;
+}
+
+.oda-chat-card-content {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.0;
+    margin-bottom: -25px !important;
+    font-size: 14px;
+    height: fit-content !important;
+    font-family: "Oracle Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif !important;
+}
+
+.oda-chat-round {
+    background-color: #993f39;
+}
+
+.oda-chat-card-title {
+    color: #161513 !important;
+
+}
+
+.oda-chat-card-description {
+    color: #161513 !important;
+    margin: 23px !important;
+    margin-top: -4px !important;
+}
+
+/* Popup arrow */
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+/* for shadow chat window */
+@media screen and (min-width: 426px) {
+    .oda-chat-widget {
+        border-radius: 4px;
+        height: 620px;
+        width: 375px;
+        box-shadow: 0px 5px 35px 9px;
+    }
+}
+
+/* for increasing height of chat window */
+@media screen and (min-width: 769px) {
+    .oda-chat-widget {
+        height: 70vh;
+        max-height: calc(100vh - 20px - 10px);
+        max-width: 512px;
+        width: 30vw;
+    }
+}
+
+/* for changing fot size and font */
+.oda-chat-message-actions .oda-chat-action-postback {
+    width: -webkit-fill-available !important;
+    color: #007f9e !important;
+    background-color: #ffffff !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    font-size: 11px !important;
+    margin: 3px !important;
+    padding: 6px !important;
+    text-decoration: none !important;
+    font-weight: 600;
+}
+
+
+/* for minimize button padding and margin */
+.oda-chat-header-button {
+    align-items: center;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer !important;
+    display: flex !important;
+    height: 32px;
+    justify-content: right !important;
+    margin: 0 8px 0px 0px !important;
+    max-height: 32px;
+    min-width: 20px;
+    max-width: 32px;
+    padding: 0px !important;
+    width: 32px;
+}
+
+/* for graivence form select box height */
+.Ava_grivance_empcategory {
+    height: 32px;
+    width: 98%;
+}
+
+/* Form title */
+.Ava_oda_heading {
+    margin-bottom: 20px !important;
+}
+
+/* select category */
+.Ava_grivance_empcategory {
+    height: 30px !important;
+    width: 96% !important;
+    padding: 5px !important;
+    border-radius: 15px !important;
+}
+
+/* query textarea */
+.Ava_grivance_querydesc {
+    padding: 5px !important;
+    border-radius: 20px !important;
+}
+
+/* submit button */
+.Ava_grivence_submit_btn {
+    border-radius: 10px !important;
+    width: 94% !important;
+}
+
+/** Remove below Code id have done changes as per my previous mail **/
+/* for paragraph tag */
+.oda_para {
+    margin: auto;
+    line-height: 1;
+}
+
+/**************************************************************************/
+
+/* for shadow chat window and height */
+
+@media screen and (min-width: 426px) {
+
+    .oda-chat-widget {
+        border-radius: 4px;
+        height: 620px;
+        width: 375px;
+        box-shadow: 0px 5px 35px 9px #ccc;
+        max-height: calc(100vh - 20px - 10px) !important;
+    }
+
+}
+
+/* submit button */
+.Ava_grivence_submit_btn {
+    border-radius: 10px !important;
+    width: 94% !important;
+    color: white !important;
+    background-color: #007f9e !important;
+}
+
+
+/* Create two equal columns that floats next to each other */
+
+.Ava_column {
+    float: left;
+    width: 47%;
+    padding: 11px;
+    height: 65px;
+    display: grid;
+}
+
+.Ava_row:after {
+    content: "" !important;
+    display: table !important;
+    clear: both !important;
+}
+
+.Ava_select {
+    /* width: 110px !important; */
+    /* width: 103px !important; */
+    width: 105px !important;
+    height: 20px !important;
+    border-radius: 1px !important;
+}
+
+.Ava_Text {
+    /* width: 113px !important; */
+    width: 97px !important;
+    height: 20px !important;
+}
+
+.Ava_label_per {
+    white-space: nowrap !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    margin-left: 2px !important;
+    margin-top: 13px !important;
+}
+
+
+.Ava_btn {
+    width: 94% !important;
+    height: 27px !important;
+    background-color: #ed4a50 !important;
+    border-color: #ed4a50 !important;
+    color: white !important;
+    /* margin-left: 1% !important; */
+    margin-left: 11% !important;
+    border-radius: 9px !important;
+    font-size: 14px !important;
+    padding: 2px !important;
+    border: 1px solid #f11c1c !important;
+    margin-bottom: 2px !important;
+    align-self: end;
+}
+
+
+
+.Ava_single_select {
+    width: 57% !important;
+    height: 23px !important;
+}
+
+.Ava_single_btn {
+    width: 94% !important;
+    height: 27px !important;
+    background-color: #ed4a50 !important;
+    border-color: #ed4a50 !important;
+    color: white !important;
+    margin-left: 1% !important;
+    border-radius: 9px !important;
+    font-size: 14px !important;
+    padding: 2px !important;
+    align-self: end;
+    border: 1px solid #f11c1c !important;
+    margin-bottom: 2px !important;
+}
+
+.Ava_select_doc {
+    width: 145% !important;
+    height: 22px !important;
+}
+
+.Ava_checkbox_cl {
+    margin-top: -14px !important;
+    margin-left: 16px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    white-space: nowrap;
+}
+
+.Ava_ch_cl {
+    margin-top: 2% !important;
+    /* margin-left: -91% !important; */
+}
+
+
+
+.Ava_column1 {
+    float: left;
+    width: 48%;
+    padding: 3px;
+    height: 69px;
+    display: grid;
+}
+
+.Ava_row1 {
+    padding-bottom: 52px !important;
+    margin-top: -27px !important;
+
+}
+
+.Ava_row1:after {
+    content: "" !important;
+    display: table !important;
+    clear: both !important;
+}
+
+
+.Ava_txtcl {
+    width: 113px !important;
+    height: 20px !important;
+    margin-left: 116px;
+    margin-top: -22px;
+    float: left;
+    border-radius: 2px !important;
+}
+
+.Ava_text_cl {
+    width: 48% !important;
+    height: 23px !important;
+}
+
+
+.oda-chat-wrapper button:disabled {
+    opacity: 1.5 !important;
+    cursor: not-allowed;
+}
+
+
+.oda-chat-action-postback {
+    background-color: #c94f54 !important;
+    /* color: #fff !important; */
+    width: 83% !important;
+    display: unset !important;
+    margin-left: 1% !important;
+    border-radius: 10px !important;
+    float: left !important;
+    font-size: 12px !important;
+    height: 37px !important;
+}
+
+
+.oda-chat-card-actions {
+
+    margin-left: 5% !important;
+    margin-top: 3% !important;
+    max-width: 90% !important;
+}
+
+.oda-chat-card-actions button:hover {
+    background-color: #C64304 !important;
+    color: white !important;
+    transition: all 0.2s ease !important;
+}
+
+
+
+.oda-chat-message {
+    /* line-height: 1.5; */
+    margin-bottom: -12px !important;
+}
+
+
+.Ava_single_select {
+    width: 87%;
+    height: 23px;
+}
+
+.Ava_ch_cl {
+    margin-top: -25px;
+    margin-left: 44px;
+}
+
+.Ava_button_cl {
+    width: 31% !important;
+    height: 29px !important;
+    background-color: #ed4a50 !important;
+    border-color: #ed4a50 !important;
+    color: white !important;
+    margin-left: 48px !important;
+    border-radius: 9px !important;
+    font-size: 14px !important;
+    padding: 2px !important;
+    margin-top: 4px !important;
+    border: 1px solid #f11c1c !important;
+    margin-bottom: 2px !important;
+}
+
+
+
+.oda-chat-conversation {
+    background-color: white !important;
+}
+
+.AVA_home_icon {
+    background: transparent !important;
+    font-size: small !important;
+    border: none !important;
+    cursor: pointer !important;
+    display: block !important;
+    padding-left: 0px !important;
+    padding-right: 67px !important;
+}
+
+.Ava_form {
+    margin-top: -30px !important;
+    margin-bottom: -8px !important;
+}
+
+.Ava_bold {
+    font-weight: bold !important;
+    font-size: 14px !important;
+    text-align: start !important;
+}
+
+.oda-chat-none {
+    display: none !important;
+}
+
+.oda-chat-wrapper button {
+    position: relative;
+    padding: 8px 16px;
+    margin: 16px 0 -11px !important;
+    min-height: 36px;
+    line-height: 16px;
+    font-size: 13.75px;
+    font-weight: 600;
+    font-family: "Oracle Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif !important;
+    border-radius: 4px;
+    border-width: thin;
+    border-style: solid;
+    cursor: pointer !important;
+    overflow: hidden;
+    word-break: break-word;
+    flex-shrink: 0;
+}
+
+
+/* this  change is for footer input message*/
+.oda-chat-wrapper .oda-chat-user-input {
+    width: 100%;
+    min-height: 44px;
+    padding: 10px;
+    padding-inline-end: 100px;
+    margin: 0;
+    background-color: var(--color-input-background);
+    color: var(--color-input-text);
+    border: 1px solid var(--color-input-border);
+    font-size: 1em;
+    font-family: "Oracle Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif !important;
+    ;
+    /* line-height: 24px; */
+    outline: none;
+    resize: none;
+    border: none;
+    border-radius: 6px;
+}
+
+.oda-chat-flex {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: inherit !important; */
+}
+
+.oda-chat-wrapper .oda-chat-message-global-actions {
+    margin-left: 22%;
+    margin-block-start: auto;
+    margin-top: -16px !important;
+    width: 70%;
+}
+
+.Ava_quickLInks {
+    color: #391bf3 !important;
+
+}
+.Ava_quickLinks {
+    color: #391bf3 !important;
+
+}
+
+.oda-chat-wrapper .oda-chat-footer-button svg>path {
+    fill: #525252 !important;
+}
+
+/*DA Button prompt changes*/
+.oda-chat-wrapper .oda-chat-message-global-actions {
+    margin-left: 22%;
+    margin-block-start: auto;
+    margin-top: -5px !important;
+}
+
+
+.oda-chat-message {
+    margin-bottom: -12px !important;
+}
+
+/* css changes 22-08-23 */
+.oda-chat-wrapper .oda-chat-action-postback {
+    background: var(--color-actions-background);
+    color: var(--color-actions-text);
+    /* background-color: #fff !important;
+    color: rgb(14 ,114, 149) !important; */
+    border-color: var(--color-actions-border);
+    padding: 1px 16px !important;
+    text-align: center !important;
+    /* color: #88000a !important; */
+    color: #C64304 !important;
+    font-size: 12px !important;
+}
+
+.Ava_Li_tag {
+    margin-left: 9px;
+}
+
+
+
+/*New CSS*/
+
+.oda-chat-wrapper .oda-chat-messages-wrapper .oda-chat-message-list .oda-chat-message:last-child .oda-chat-card-message-content:last-child .oda-chat-card-message-cards {
+    margin-bottom: 0px !important;
+}
+
+
+#oda-chat-title {
+    margin: 15px !important;
+    /* text-align: center; */
+    padding-left: 45px !important;
+}
+
+.oda-chat-wrapper .oda-chat-header .oda-chat-header-info-wrapper {
+    background-repeat: no-repeat !important;
+    background-position: left;
+    background-size: 54px !important;
+    background-image: cover;
+    background-repeat: no-repeat !important;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+    margin: 0 8px;
+    background: url(https://objectstorage.ap-mumbai-1.oraclecloud.com/n/bmrdvxoeeutl/b/AVA_Logos/o/Abg_ava_bot_icon.png);
+
+}
+
+.oda-chat-footer-actions.oda-chat-flex {
+    margin-top: -11px;
+}
+
+.oda-chat-wrapper .oda-chat-dialog-wrapper .oda-chat-prompt-banner {
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, .16) 0px 4px 8px 0px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    max-width: 450px;
+    min-height: 198px !important;
+    max-height: 60%;
+    top: 30%;
+    left: 0;
+    right: 0;
+    padding: 8px 16px;
+    margin: 8px auto;
+    width: calc(100% - 16px);
+    z-index: 5;
+    animation: banner-in .2s cubic-bezier(0.22, 0.45, 0.42, 0.92) both;
+    background-color: var(--color-popup-background);
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+
+.oda-chat-action-postback {
+    background-color: #fff !important;
+    /* color: #fff !important; */
+    width: 83% !important;
+    display: unset !important;
+    margin-left: 1% !important;
+    border-radius: 5px !important;
+    float: left !important;
+    font-size: 12px !important;
+    height: 37px !important;
+
+}
+
+.oda-chat-card-actions button.oda-chat-disabled {
+    background: #fff !important;
+    color: #0e7295 !important;
+    border-color: #0e7295 !important;
+    cursor: pointer !important;
+    padding-top: 3% !important;
+    display: inline-block !important;
+}
+
+.oda-chat-wrapper .oda-chat-dialog-wrapper .oda-chat-prompt-banner .oda-chat-action-wrapper .oda-chat-popup-action.oda-chat-filled {
+    background-color: #9a0007 !important;
+    color: var(--color-popup-button-background);
+}
+
+.oda-chat-wrapper .oda-chat-button {
+    position: absolute;
+    right: 15px;
+    bottom: 1px;
+    height: 70px;
+    width: 70px;
+    max-width: unset;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    color: var(--color-text);
+    background-color: #025e7e00 !important;
+    border-radius: 0;
+    overflow: visible;
+    animation: hand-shake 3s infinite !important;
+}
+
+
+@keyframes hand-shake {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    25% {
+        transform: rotate(15deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.oda-chat-wrapper .oda-chat-card {
+    background-color: #FFEDE5 !important;
+    border-radius: 0px 20px 20px 20px !important;
+    box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.15), 0px 2px 15px rgba(0, 0, 0, 0.1), 8px 0px 8px rgba(0, 0, 0, 0.05) !important;
+    padding: 14px !important;
+}
+
+
+
+
+.oda-chat-wrapper button {
+    margin: 0px !important;
+}
+
+.Ava_dflex #btnSubmit {
+    width: 30% !important;
+    background-color: #d71d24 !important;
+    color: white !important;
+    border: 1px solid #d71d24 !important;
+}
+
+.Ava_dflex #btnCancel {
+    width: 30% !important;
+    background-color: white !important;
+    color: #d71d24 !important;
+}
+
+.Ava_dflex {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 15px !important;
+    gap: 10px;
+    margin-top: 10px !important;
+}
+
+@media (max-width: 480px) {
+    .Ava_dflex {
+        display: flex !important;
+        justify-content: flex-start !important;
+        gap: 20px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .Ava_dflex {
+        display: flex !important;
+        justify-content: center !important;
+        margin-right: 40px !important;
+        gap: 20px !important;
+    }
+}
+
+
+
+
+
+.Ava_select_doc {
+    /* width: 145% !important; */
+    height: 22px !important;
+    border-radius: 7px !important;
+}
+
+.Ava_select {
+    border-radius: 6px !important;
+}
+
+.Ava_select_doc {
+
+    height: 22px !important;
+}
+
+
+
+/*For Read More Read Less Functionality */
+.Ava_hidden {
+    display: none;
+}
+
+
+.oda-chat-button img {
+    display: none !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+
+
+/*Add Edit and menu button in address*/
+.oda-chat-wrapper .oda-chat-card-actions,
+.oda-chat-wrapper .oda-chat-form-actions,
+.oda-chat-wrapper .oda-chat-message-actions,
+.oda-chat-wrapper .oda-chat-message-global-actions {
+    margin-top: 6px;
+    display: flex;
+    align-items: flex-start !important;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 6px !important;
+}
+
+.oda-chat-wrapper button {
+    position: relative;
+    max-width: 100%;
+    padding: 9px 16px;
+    margin: 0 0 8px;
+    min-height: 32px !important;
+    line-height: 16px;
+    font-size: 13.75px;
+    font-weight: 600;
+    font-family: "Oracle Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif !important;
+    border-radius: 4px;
+    border-width: thin;
+    border-style: solid;
+    cursor: pointer !important;
+    overflow: hidden;
+    word-break: break-word;
+    flex-shrink: 0;
+}
+
+
+
+
+/* Phone Title */
+#Ava_PhN {
+    padding: 7px !important;
+}
+
+/* Lincennce Number */
+#Ava_LN {
+    padding: 10px !important;
+}
+
+/* Button */
+.oda-chat-wrapper .oda-chat-action-postback {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    outline: none !important;
+    cursor: pointer !important;
+    width: 98% !important;
+    height: 100% !important;
+    border: 1px solid #C64304 !important;
+    transition: all 0.2s ease !important;
+}
+
+
+
+/* Background */
+.oda-chat-wrapper .oda-chat-conversation {
+    background-image: url(https://i.pinimg.com/736x/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+
+
+.oda-chat-autocomplete-items>div:hover {
+    background-color: #f6cece !important;
+}
+
+
+
+
+
+.Ava_heading {
+    font-family: "Oracle Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif !important;
+    color: #b5000e !important;
+    margin-bottom: 6px !important;
+    font-weight: 500 !important;
+    margin-top: 2px !important;
+    font-size: 17px !important;
+}
+
+.Ava_subheading {
+    font-family: "Oracle Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif !important;
+    color: #454545 !important;
+    font-size: 15px !important;
+    font-weight: 500;
+    margin-bottom: 10px !important;
+    margin-top: 0px !important;
+}
+
+.oda-chat-card .oda-chat-card-title {
+    /* margin-bottom: 20px !important; */
+    color: #88000a;
+}
+
+
+/* Closing Buttons */
+.oda-chat-wrapper .oda-chat-dialog-wrapper .oda-chat-prompt-banner .oda-chat-action-wrapper .oda-chat-popup-action.oda-chat-filled {
+    background-color: #C64304 !important;
+    border-color: #C64304 !important;
+    color: #fff !important;
+}
+
+.oda-chat-wrapper .oda-chat-dialog-wrapper .oda-chat-prompt-banner .oda-chat-action-wrapper .oda-chat-popup-action {
+    border-color: #C64304 !important;
+    color: #C64304 !important;
+}
+
+.oda-chat-wrapper .oda-chat-attachment .oda-chat-attachment-placeholder {
+    background-color: transparent !important;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.oda-chat-attachment-image {
+    width: 210px !important;
+    padding: 7px !important;
+}
+
+
+
+
+.Ava_FStyle {
+    width: 228px !important;
+    padding: 8px !important;
+    margin-bottom: 5px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 3px !important;
+    color: gray !important;
+    height: 29px !important;
+    font-size: 12px !important;
+    padding: 4px 3px 4px 9px !important;
+}
+
+.Ava_dropdown {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 228px !important;
+    padding: .375rem 2.25rem .375rem 0.1 !important;
+    font-size: 12px !important;
+    color: gray;
+    height: 30px !important;
+    font-weight: 400;
+    margin-bottom: 5px;
+
+}
+
+/* Text Area */
+/* ----- Base (desktop & large screens) ----- */
+.symphonyform_description_class {
+    width: 97%;
+    max-width: 60ch;
+    min-height: 6rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+/* ----- Tablet (portrait & small laptop) ----- */
+@media (max-width: 1024px) {
+    .symphonyform_description_class {
+        max-width: 100%;
+    }
+}
+
+/* ----- Mobile-L (~425–768px) ----- */
+@media (max-width: 768px) {
+    .symphonyform_description_class {
+        max-width: 85%;
+        font-size: 0.95rem;
+    }
+}
+
+/* ----- Mobile-M (~375px) ----- */
+@media (max-width: 425px) {
+    .symphonyform_description_class {
+        max-width: 80%;
+        font-size: 0.9rem;
+    }
+}
+
+/* ----- Mobile-S (~320px) ----- */
+@media (max-width: 375px) {
+    .symphonyform_description_class {
+        max-width: 80%;
+        font-size: 0.85rem;
+    }
+}
+
+
+
+.feedback_des_cl {
+    width: 96%;
+    max-width: 60ch;
+    min-height: 6rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+    .feedback_des_cl {
+        font-size: 14px;
+        min-height: 20px;
+        width: 85% !important;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .feedback_des_cl {
+        font-size: 15px;
+        min-height: 150px;
+        width: 85% !important;
+    }
+}
+
+
+/* ----- Tablet (portrait & small laptop) ----- */
+@media (max-width: 1024px) {
+    .feedback_des_cl {
+        max-width: 100%;
+    }
+}
+
+/* ----- Mobile-L (~425–768px) ----- */
+@media (max-width: 768px) {
+    .feedback_des_cl {
+        max-width: 80%;
+        font-size: 0.95rem;
+    }
+}
+
+/* ----- Mobile-M (~375px) ----- */
+@media (max-width: 425px) {
+    .feedback_des_cl {
+        max-width: 80%;
+        font-size: 0.9rem;
+    }
+}
+
+/* ----- Mobile-S (~320px) ----- */
+@media (max-width: 375px) {
+    .feedback_des_cl {
+        max-width: 80%;
+        font-size: 0.85rem;
+    }
+}
+
+.Ava_label {
+    display: inline-block;
+    margin-bottom: 2px !important;
+    font-weight: 500 !important;
+    color: #353333 !important;
+    font-size: 12px;
+    margin: 2px 0 0px !important;
+}
+
+
+.Ava_chbx {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-top: 5px !important;
+}
+
+#Ava_ch {
+    width: 14px !important;
+}
+
+.Ava_chbx1 {
+    display: flex !important;
+    gap: 5px !important;
+}
+
+.Ava_singlechbx {
+    margin-top: 5px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 5px !important;
+}
+
+
+.Ava_single_ch {
+    margin-left: 0px !important;
+}
+
+#Ava_ch_li,
+#Ava_ch_live {
+    width: 14px !important;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+    .Ava_dropdown {
+        max-width: 190px !important;
+        display: flex;
+    }
+
+    .Ava_FStyle {
+        max-width: 190px !important;
+    }
+
+    .Ava_heading {
+        max-width: 210px !important;
+        margin-right: 45px !important;
+    }
+
+    .Ava_subheading {
+        max-width: 210px !important;
+    }
+
+    .Ava_label {
+        display: flex !important;
+    }
+
+    .oda-chat-wrapper .oda-chat-message-bubble {
+        max-width: 320px  !important;
+    }
+}
+
+
+
+.oda-chat-wrapper .oda-chat-header .oda-chat-header-info-wrapper {
+    background-repeat: no-repeat !important;
+    background-position: left;
+    background-size: 54px !important;
+    background-image: cover;
+    background-repeat: no-repeat !important;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+    margin: 0 8px;
+    background: url(https://objectstorage.ap-mumbai-1.oraclecloud.com/n/bmrdvxoeeutl/b/AVA_Logos/o/Abg_ava_bot_icon.png);
+}
+
+/*For Read more Read less functionality*/
+
+.Ava_hidden {
+    display: none;
+}
+
+/* User Side Message Bubble */
+.oda-chat-wrapper .oda-chat-message-block.oda-chat-right .oda-chat-messages-wrapper .oda-chat-message:last-child .oda-chat-message-bubble:last-child {
+    border-radius: 20px 0px 20px 20px !important;
+    background-color: #fb834a !important;
+    color: white !important;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+}
+
+
+.Ava_container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 261px !important;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5) !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*For Read More Read Less Functionality */
+.Ava_hidden {
+    display: none;
+}
+
+.oda-chat-wrapper .oda-chat-messages-wrapper .oda-chat-message-list .oda-chat-message.oda-chat-card-message-horizontal .oda-chat-next,
+.oda-chat-wrapper .oda-chat-messages-wrapper .oda-chat-message-list .oda-chat-message.oda-chat-card-message-horizontal .oda-chat-previous {
+    position: absolute;
+    z-index: 10;
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    background-color: var(--color-card-nav-button);
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .1);
+    top: calc(50% - 18px);
+    justify-content: center;
+}
+
+/*Pointer for Read More and Read Less button*/
+.Ava_ReadMore {
+    cursor: pointer;
+}
+
+
+/*time stamp*/
+.oda-chat-wrapper .oda-chat-conversation .oda-chat-conversation-pane .oda-chat-message-date,
+.oda-chat-wrapper .oda-chat-conversation .oda-chat-conversation-pane .oda-chat-relative-timestamp {
+    font-size: 12px;
+    margin: 23px 0 8px !important;
+    color: var(--color-timestamp);
+    text-align: start;
+    top: 25px;
+}
+
+
+
+
+/* for Arrow button */
+.oda-chat-wrapper .oda-chat-messages-wrapper .oda-chat-message-list .oda-chat-message.oda-chat-card-message-horizontal .oda-chat-next,
+.oda-chat-wrapper .oda-chat-messages-wrapper .oda-chat-message-list .oda-chat-message.oda-chat-card-message-horizontal .oda-chat-previous {
+    position: absolute;
+    z-index: 10;
+    width: 36px;
+    height: 36px;
+    left: -11px !important;
+    padding: 5px !important;
+    overflow: hidden;
+    background-color: var(--color-card-nav-button);
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .1);
+    top: calc(50% - 18px);
+    justify-content: center;
+}
+
+
+/*The following css is used for attachment*/
+.oda-chat-wrapper .oda-chat-attachment .oda-chat-attachment-placeholder {
+    background-color: #f6dedc00 !important;
+    max-width: calc(100% + 32px);
+    min-width: 228px;
+    min-height: 88px;
+    max-height: 230px;
+    margin: 0px !important;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.oda-chat-wrapper .oda-chat-attachment .oda-chat-attachment-footer {
+    background-color: #f6dedc00 !important;
+    color: var(--color-attachment-text);
+    margin: 0px !important;
+    padding: 16px;
+}
+
+
+/* ODA-Card */
+.oda-chat-wrapper .oda-chat-card {
+    width: 270px !important;
+}
+
+/* Global postback button (Below card) */
+.oda-chat-wrapper .oda-chat-messages-wrapper .oda-chat-message-list .oda-chat-message.oda-chat-card-message-horizontal .oda-chat-message-global-actions {
+    margin-inline-start: 23% !important;
+    max-width: 50% !important;
+    margin-top: 10px !important;
+}
+
+.oda-chat-wrapper .oda-chat-message-global-actions button:hover {
+    background-color: #C64304 !important;
+    color: white !important;
+    transition: all 0.2s ease !important;
+}
+
+
+/* Attachment */
+.oda-chat-wrapper .oda-chat-popup li {
+    color: #C64304 !important;
+}
+
