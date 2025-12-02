@@ -1,24 +1,45 @@
-//! socketController
-
 const User = require('../models/User');
 const Message = require('../models/Message');
 
 const userSockets = new Map(); // Store userId -> socketId mapping
+const adminSockets = new Set(); // Store admin socket IDs
 
 module.exports = (io) => {
     io.on('connection', (socket) => {
         console.log('New client connected:', socket.id);
 
-        // User joins
+        // Admin connects
+        socket.on('admin-connected', async (data) => {
+            console.log('Admin connected:', data.userId);
+            adminSockets.add(socket.id);
+            socket.userId = data.userId;
+            socket.isAdmin = true;
+
+            // Send current online users to the admin
+            const onlineUserIds = Array.from(userSockets.keys());
+            socket.emit('current-online-users', onlineUserIds);
+
+            console.log('Sent online users to admin:', onlineUserIds);
+        });
+
+        // Regular user connects
         socket.on('user-connected', async (userId) => {
             userSockets.set(userId, socket.id);
             socket.userId = userId;
+            socket.isAdmin = false;
 
-            // Update user online status
+            // Update user online status in database
             await User.findByIdAndUpdate(userId, { isOnline: true });
 
-            // Notify all users about online status
+            console.log('User connected:', userId);
+
+            // Notify all clients (including admins) about online status
             io.emit('user-status-changed', { userId, isOnline: true });
+
+            // Also emit user-connected event to all admins
+            adminSockets.forEach(adminSocketId => {
+                io.to(adminSocketId).emit('user-connected', userId);
+            });
         });
 
         // Send message
@@ -121,17 +142,29 @@ module.exports = (io) => {
 
         // Disconnect
         socket.on('disconnect', async () => {
-            if (socket.userId) {
+            if (socket.isAdmin) {
+                // Admin disconnected
+                adminSockets.delete(socket.id);
+                console.log('Admin disconnected:', socket.id);
+            } else if (socket.userId) {
+                // Regular user disconnected
                 userSockets.delete(socket.userId);
 
-                // Update user offline status
+                // Update user offline status in database
                 await User.findByIdAndUpdate(socket.userId, {
                     isOnline: false,
                     lastSeen: new Date()
                 });
 
-                // Notify all users about offline status
+                console.log('User disconnected:', socket.userId);
+
+                // Notify all clients (including admins) about offline status
                 io.emit('user-status-changed', { userId: socket.userId, isOnline: false });
+
+                // Also emit user-disconnected event to all admins
+                adminSockets.forEach(adminSocketId => {
+                    io.to(adminSocketId).emit('user-disconnected', socket.userId);
+                });
             }
             console.log('Client disconnected:', socket.id);
         });

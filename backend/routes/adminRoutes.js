@@ -11,5 +11,6 @@ router.post('/users/register', adminMiddleware, authController.register);
 router.get('/users/:userId/chat-history', adminMiddleware, adminController.getChatHistoryByUser);
 router.get('/users/:userId/download-chat', adminMiddleware, adminController.downloadChatHistory);
 router.get('/dashboard/stats', adminMiddleware, adminController.getDashboardStats);
+router.get('/online-users', adminMiddleware, adminController.getOnlineUsers);
 
 module.exports = router;

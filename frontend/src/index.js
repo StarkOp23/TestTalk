@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import AdminDashboard from './AdminDashboard';
+import AdminWrapper from './AdminWrapper';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -28,7 +29,7 @@ const renderApp = () => {
     if (path === '/admin') {
         // Admin route - check if user is admin
         if (user && user.isAdmin) {
-            return <AdminDashboard />;
+            return <AdminWrapper />;
         } else {
             // Redirect to home if not admin
             window.location.href = '/';

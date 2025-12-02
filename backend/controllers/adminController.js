@@ -198,3 +198,24 @@ exports.getDashboardStats = async (req, res) => {
         });
     }
 };
+
+// Get online users
+exports.getOnlineUsers = async (req, res) => {
+    try {
+        const onlineUsers = await User.find({ 
+            isOnline: true,
+            isAdmin: false 
+        }).select('_id');
+        
+        const userIds = onlineUsers.map(user => user._id.toString());
+        
+        res.json({
+            onlineUsers: userIds,
+            count: userIds.length
+        });
+    } catch (error) {
+        res.status(500).json({
+            error: error.message
+        });
+    }
+};
